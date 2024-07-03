@@ -1,0 +1,431 @@
+/* Bagian [1] */
+/* Bagian ini untuk menginsialisasikan variable warna */
+:root {
+  --pink: #f8c8c8;
+  --dark: #210f13;
+  --yellow: #f8edc8;
+  --brown: #a67e61;
+  --green: #84c7ae;
+  --blue: #81b9d0;
+  --white: #fbfbfb;
+}
+/* End Bagian [1] */
+
+/* Untuk membuat scroll menjadi lebih smooth */
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+/* End Bagian [2] */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Untuk membuat navbar / Navigasi Bar ATAS */
+.navbar-top {
+  width: 100%;
+  height: 5em;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  color: var(--dark);
+}
+.navbar-top > .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-top > .container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu > ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+}
+.menu > ul > li a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 3em;
+}
+.menu > ul > li a:hover,
+.menu > ul > li a:active {
+  color: var(--brown);
+  font-weight: bold;
+}
+.navbar-top > .container > .logo img {
+  max-height: 5em;
+  max-width: 100%;
+  display: block;
+}
+/* End Bagian [3] */
+
+/* Untuk membuat link active */
+.active {
+  color: var(--brown) !important;
+  font-weight: bold;
+}
+/* End Bagian [4] */
+
+/* Untuk menghialngkat navbar bottom dan jarak pada footer(paddingers) pada desktop version */
+.navbar-bottom,
+.paddingers {
+  display: none;
+}
+/* End Bagian [5] */
+
+/* Untuk membuat navbar / Navigasi Bar BAWAH */
+.navbar-bottom .container {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--white);
+  position: fixed;
+  bottom: 0;
+  color: var(--dark);
+}
+.navbar-bottom a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar-bottom .items {
+  text-align: center;
+}
+.navbar-bottom span {
+  display: block;
+}
+.navbar-bottom a:hover,
+.navbar-bottom a:active {
+  color: var(--brown);
+  font-weight: bold;
+}
+/* End Bagian [6] */
+
+/* Home Section */
+#home {
+  width: 100%;
+  background-color: var(--brown);
+  color: var(--yellow);
+}
+#home > .container {
+  width: 80%;
+  margin: auto;
+  padding-top: 10vh;
+  margin-top: 3em;
+}
+#home > .container h1 {
+  font-size: 2.6em;
+}
+#home > .container .description {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#home > .container a {
+  text-decoration: none;
+  color: inherit;
+}
+#home > .container a:hover {
+  font-weight: 800;
+}
+/* End Bagian [7] */
+
+/* About Us Section */
+#about-us {
+  width: 100%;
+  background-color: var(--pink);
+  color: var(--dark);
+}
+#about-us > .container {
+  width: 80%;
+  margin: auto;
+  padding: 5em 0 5em 0;
+}
+#about-us .image-container {
+  width: 80%;
+  height: 20em;
+}
+#about-us .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 1em 1em;
+}
+#about-us > .container h1 {
+  font-size: 2.6em;
+  line-height: 1.5em;
+}
+#about-us > .container .description {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#about-us > .container a {
+  text-decoration: none;
+  color: inherit;
+}
+#about-us > .container a:hover {
+  font-weight: 800;
+}
+/* End Bagian [8] */
+
+/* Halaman products/index.php di bagian section product detail */
+#product-detail {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--dark);
+}
+#product-detail > .container {
+  width: 80%;
+  margin: auto;
+  padding: 10em 0 10em 0;
+}
+#product-detail .image-container {
+  width: 80%;
+  height: 20em;
+}
+#product-detail .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 1em 1em;
+}
+#product-detail > .container h1 {
+  font-size: 2.6em;
+  line-height: 1.5em;
+}
+#product-detail > .container .description {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#product-detail > .container a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--brown);
+  padding: 1em;
+  border-radius: 5px;
+}
+/* End Bagian [9] */
+
+/* Catalog Section */
+#catalog > .container {
+  width: 80%;
+  margin: auto;
+  padding: 5em 0 5em 0;
+}
+#catalog > .container h1 {
+  font-size: 2.6em;
+}
+#catalog > .container .description {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+#catalog > .container > .category-slider .content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#catalog > .container > .category-slider a {
+  display: block;
+  text-decoration: none;
+  color: var(--dark);
+}
+#catalog .product-card > .gambar {
+  height: 40vh;
+}
+#catalog .product-card > .gambar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End Bagian [10] */
+
+/* Contact Us Section */
+#contact-us {
+  width: 100%;
+  background-color: var(--pink);
+  color: var(--dark);
+  padding-bottom: 3em;
+}
+#contact-us > .container {
+  width: 80%;
+  margin: auto;
+  padding: 4em 0 1em 0;
+}
+#contact-us > .container h1 {
+  font-size: 2.6em;
+}
+#contact-us .contact-form {
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  padding: 4em;
+}
+#contact-us button {
+  display: block;
+  background-color: var(--brown);
+  color: var(--white);
+  border: none;
+  padding: 1em;
+  width: 100%;
+  border-radius: 10px;
+}
+#contact-us button:hover {
+  cursor: pointer;
+}
+/* End Bagian [11] */
+
+/* Untuk membuat form input lebih baik */
+.input-form {
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 1em;
+  border: 2px solid gainsboro;
+  display: block;
+}
+
+/* Merubah warna pada rating di bintang */
+.star-color {
+  color: rgb(179, 132, 36) !important;
+  font-size: 1.2em !important;
+}
+
+/* Image Background pada section home */
+.image-background {
+  height: 40vh;
+  margin-top: 5em;
+}
+.image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 1em 0em 0em;
+}
+
+/* Membuat teks ke tengah */
+.text-center {
+  text-align: center;
+}
+
+/* Footer Section */
+#footer {
+  width: 100%;
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+#footer > .container {
+  width: 80%;
+  margin: auto;
+  padding: 2em 0 2em 0;
+}
+#footer > .container > .social-icon {
+  width: 25%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End Bagian [12] */
+
+/* Untuk membuat footer menjadi berjarak pada mobile version */
+.paddingers {
+  height: 3em !important;
+}
+/* End Bagian [13] */
+
+/* CSS Untuk mobile version (Media Query) */
+@media only screen and (max-width: 600px) {
+  .navbar-top .container {
+    width: 100%;
+    padding: 0;
+  }
+  .navbar-top .container .menu {
+    display: none;
+  }
+  .navbar-bottom,
+  .paddingers {
+    display: block;
+  }
+  .navbar-top .container .logo {
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  #home > .container {
+    padding-top: 10vh;
+    margin-top: 2em;
+  }
+  #home > .container h1 {
+    font-size: 2em;
+  }
+  #home > .container .description {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  #about-us > .container h1 {
+    font-size: 2em;
+  }
+  #about-us > .container .description {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  #about-us .image-container {
+    width: 100%;
+    height: 40vh;
+  }
+  #product-detail > .container h1 {
+    font-size: 2em;
+  }
+  #product-detail > .container .description {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  #product-detail .image-container {
+    width: 100%;
+    height: 40vh;
+  }
+  #catalog > .container h1 {
+    font-size: 2em;
+  }
+  #catalog > .container .description {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  #catalog > .container > .category-slider .content {
+    width: 300%;
+  }
+  #catalog > .container > .category-slider {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  #contact-us > .container h1 {
+    font-size: 2em;
+  }
+  #contact-us .contact-form {
+    padding: 2em;
+  }
+
+  .image-background {
+    height: 20vh;
+    margin-top: 2em;
+  }
+
+  #footer > .container > .social-icon {
+    width: 100%;
+  }
+}
+/* End MEdia Query [14] */
